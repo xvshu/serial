@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+<dubbo:application name="serial-soa-provider" owner="serial-soa" organization="dubbox"/>
+    <dubbo:registry protocol="zookeeper" address="192.168.0.79:2181" id="elZookeeper" timeout="15000"/>
+    <dubbo:protocol name="dubbo" port="-1"  />
+    <dubbo:monitor protocol="registry"  />
+
+    <!--<dubbo:service interface="com.el.serial.soa.service.logic.serial.ILogicSerialService" ref="logicSerialService" group="xs-frame-serial" version="1.0.0"-->
+    <!--timeout="60000" protocol="dubbo" registry="elZookeeper" />-->
+
+
+</beans>
