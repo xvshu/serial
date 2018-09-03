@@ -17,8 +17,8 @@ import java.util.List;
 @Service
 public class SequenceHelp {
 
-    private static Integer blockSizeL1=200;
-    private static Integer blockSizeL2=500;
+    private static Integer blockSizeL1=20000;
+    private static Integer blockSizeL2=50000;
 
     @Autowired
     private   DataSource dataSource;
