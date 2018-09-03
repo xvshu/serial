@@ -113,8 +113,10 @@ public void getProfessionSerialNumber_test1 () {
 ```
 
 # 性能
-jvm内存 512m cpu 2核 个人电脑
-获取300000个流水号 时间<2s
+
+服务端在个人电脑：jvm内存 512m cpu 2核 
+
+junit获取300000个流水号 时间<2s
 
 
 
