@@ -74,6 +74,31 @@ spring.redis.port=9000
 	version="1.0.0" timeout="60000" protocol="dubbo" registry="zookeeper" validation="false" lazy="true" retries="0" check="false" />
 	
 ```
+
+## 取值范围
+
+ 
+|功能|平台区分|业务编码|发生系统|发生服务|终端类型|时间|序号|
+|位数|1|5|1|2|2|6|8|	 	 
+|取值范围|1|随意|01-08|随意|1-5|自动计算|自动计算|
+
+以上规定在serial.properties中有规定，此为初始值 countFor 开头标识取值位数限制，如许扩展请修改
+
+serial.properties：
+
+```
+platformValues=1
+systemNoValues=1,2,3,4,5,6,7,8
+TerminalType=1,2,3,4,5
+formatStr=yyMMdd
+countForPlatform=1
+countForBusinessNo=5
+countForSystemNo=1
+countForServiceNo=2
+countForTerminalType=2
+countForSerialNumber=8
+countForDetailSerialNumber=5
+```
 		
 
 
