@@ -132,7 +132,7 @@ public void getProfessionSerialNumber_test1 () {
 
 ```
 
-返回结果
+返回结果（本次流水号以JC开头，为了区分环境，详情可以根据需要在程序中修改）
 ```
 
 {"result":"JC1010011XV0118090300116001","success":true}
